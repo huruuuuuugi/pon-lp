@@ -685,8 +685,8 @@ section[id] {
   /* SP：PCと同じく水色の床に座り、右のレモンの缶に背中を預ける位置
      背景は横幅100%で下端そろえなので、床の高さは画面幅に比例する → vwで指定する */
   right: auto;
-  bottom: calc(36vw - var(--fv-shift));
-  left: 36%;
+  bottom: calc(46vw - var(--fv-shift));
+  left: 41%;
   width: 49%;
   max-width: 455px;
   scale: -1 1;
