@@ -573,19 +573,29 @@ section[id] {
 /* =========================================================
    5. FV
    ========================================================= */
+/*
+  SP：FVを1画面に収め、上にメインコピー、一番下にCTAを置く
+  - 背景（960×2015）は横幅100%で敷き、はみ出した上の空の部分を切る
+  - 画像の下端の濃い青の帯は、CTAが入る分だけ残して下へ逃がす（--fv-shift）。缶が下がり、コピーと重なりにくくなる
+  - 画像より縦長にはしない（max-height）。左右が切れて、床や女の子の位置がずれるのを防ぐ
+*/
 .fv {
+  --fv-shift: 7vw;
   position: relative;
-  /* SP：縦長の専用画像（960×2015）より少し縦長にして、宙に浮いた缶と文字が重ならないようにする */
-  aspect-ratio: 960 / 2150;
+  display: flex;
+  flex-direction: column;
+  height: 100svh;
+  min-height: 560px;
+  max-height: calc(100vw * 2015 / 960 - var(--fv-shift));
   overflow: hidden;
   color: var(--color-white);
   background: var(--color-blue);
 }
 
-/* SP：上部が空いた縦長の専用画像。缶が下にくるよう下端をそろえる */
+/* SP：上部が空いた縦長の専用画像。缶が下にくるよう下端をそろえ、--fv-shift 分だけFVの外へ下げる */
 .fv__bg {
   position: absolute;
-  inset: 0;
+  inset: 0 0 calc(var(--fv-shift) * -1);
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -593,16 +603,19 @@ section[id] {
   animation: fv-bg 1.8s var(--ease-out) both;
 }
 
+/* 残りの高さをすべて使い、CTAを下端に押し下げる */
 .fv__inner {
   position: relative;
   z-index: 1;
-  display: grid;
-  gap: var(--space-m);
-  padding: var(--space-l) var(--gutter) 0;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 12px;
+  padding: var(--space-m) var(--gutter) var(--space-l);
 }
 
 .fv__logo {
-  width: 88px;
+  width: 72px;
   animation: drop-in 1s var(--ease-spring) .2s both;
 }
 
@@ -613,8 +626,10 @@ section[id] {
 }
 
 .fv__body {
-  display: grid;
-  gap: var(--space-m);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .fv__title {
@@ -633,19 +648,22 @@ section[id] {
   animation: slam .9s var(--ease-spring) .7s both;
 }
 
+/* SP：1行に収めて高さを抑え、宙に浮いた缶と重ならないようにする */
 .fv__lead {
   font-weight: 700;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.6;
-  letter-spacing: .1em;
+  letter-spacing: .04em;
   animation: fade-up .8s var(--ease-out) 1.05s both;
 }
 
+/* margin-top: auto で、メインコピーとの間の余白をすべて上に取り、FVの一番下に置く */
 .fv__actions {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: var(--space-s) var(--space-m);
+  margin-top: auto;
   animation: fade-up .8s var(--ease-out) 1.2s both;
 }
 
@@ -664,11 +682,12 @@ section[id] {
 .fv__girl {
   position: absolute;
   z-index: 1;
-  /* SP：PCと同じく水色の床に座り、右のレモンの缶に背中を預ける位置 */
+  /* SP：PCと同じく水色の床に座り、右のレモンの缶に背中を預ける位置
+     背景は横幅100%で下端そろえなので、床の高さは画面幅に比例する → vwで指定する */
   right: auto;
-  bottom: 17%;
-  left: 35%;
-  width: 52%;
+  bottom: calc(36vw - var(--fv-shift));
+  left: 36%;
+  width: 49%;
   max-width: 455px;
   scale: -1 1;
   pointer-events: none;
@@ -704,8 +723,13 @@ section[id] {
 
 /* PC：Figmaの1440×820を基準に、--u（デザイン上の1px）で比率ごと伸縮 */
 @media (min-width: 768px) {
+  /* SPの「1画面に収める」指定を解除し、Figmaの比率に戻す */
   .fv {
+    --fv-shift: 0px;
+    display: block;
+    height: auto;
     min-height: auto;
+    max-height: none;
     aspect-ratio: 1440 / 820;
     container-type: inline-size;
   }
@@ -720,6 +744,7 @@ section[id] {
   }
 
   .fv__inner {
+    display: grid;
     gap: calc(48 * var(--u));
     padding: calc(64 * var(--u));
   }
@@ -729,6 +754,7 @@ section[id] {
   }
 
   .fv__body {
+    display: grid;
     justify-items: start;
     gap: calc(64 * var(--u));
     width: calc(548 * var(--u));
@@ -742,6 +768,7 @@ section[id] {
   .fv__lead {
     margin-top: calc(-40 * var(--u));
     font-size: max(14px, calc(24 * var(--u)));
+    letter-spacing: .1em;
     white-space: nowrap;
   }
 
