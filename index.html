@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PON! | シュワっと毎日をひっくり返せ。</title>
+  <meta name="description" content="果汁のフレッシュさとカラフルなパッケージが自慢のクラフトソーダ「PON!」。LEMON POP・BERRY BANG・SUNNY TROPICの3フレーバー。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single&family=Dela+Gothic+One&family=Poppins:wght@700&family=Zen+Maru+Gothic:wght@500;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- ===== FV ===== -->
+  <header class="fv" id="top">
+    <picture class="fv__picture">
+      <!-- ブラウザは上から順に「条件に合い、表示できる形式」の1つ目を使う。AVIF非対応ならPNGへ -->
+      <source media="(max-width: 767px)" type="image/avif" srcset="img/fv-bg-sp-750.avif 750w, img/fv-bg-sp-960.avif 960w" sizes="100vw" width="960" height="2015">
+      <source media="(max-width: 767px)" srcset="img/fv-bg-sp.png" width="960" height="2015">
+      <source type="image/avif" srcset="img/fv-bg-1366.avif" width="1366" height="768">
+      <img class="fv__bg" src="img/fv-bg.png" alt="" width="1366" height="768" fetchpriority="high">
+    </picture>
+
+    <div class="fv__inner">
+      <a class="fv__logo" href="#top">
+        <img src="img/logo-on-blue.svg" alt="PON!" width="130" height="86">
+      </a>
+
+      <div class="fv__body">
+        <h1 class="fv__title">
+          <img class="fv__title-1" src="img/fv-copy-1.png" alt="シュワっと" width="539" height="152">
+          <img class="fv__title-2" src="img/fv-copy-2.png" alt="毎日をひっくり返せ。" width="548" height="101">
+        </h1>
+        <p class="fv__lead">退屈な午後に、弾けるフルーツのごほうびを。</p>
+
+        <div class="fv__actions">
+          <a class="button" href="#shop">3種セットを見る</a>
+          <a class="text-link text-link--white" href="#flavors">フレーバーを見る</a>
+        </div>
+      </div>
+    </div>
+
+    <picture>
+      <source type="image/avif" srcset="img/fv-girl-608.avif 608w, img/fv-girl-1232.avif 1232w" sizes="(min-width: 768px) 32vw, 200px">
+      <img class="fv__girl" src="img/fv-girl.png" alt="" width="1408" height="768">
+    </picture>
+  </header>
+
+  <main>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about__inner">
+        <img class="about__mark" src="img/logo-white.svg" alt="" width="654" height="432">
+
+        <div class="about__text">
+          <hgroup class="heading">
+            <p class="heading__en" data-reveal="up">ABOUT</p>
+            <h2 class="heading__ja" id="about-title" data-split>毎日に、<br>ひとくちの<wbr>驚きを。</h2>
+          </hgroup>
+
+          <div class="about__body" data-reveal="up">
+            <p>いつもの飲み物に、ちょっと飽きていませんか？</p>
+            <p>PON!は、果汁のフレッシュさと、思わず手に取りたくなるカラフルなパッケージが自慢のクラフトソーダ。<br>プシュッと開けた瞬間から、退屈な毎日が少しだけ楽しくなる。そんな“小さな驚き”を、1本に詰めこみました。</p>
+          </div>
+
+          <ul class="about__tags" data-stagger>
+            <li class="tag" data-reveal="pop">気分が上がるパッケージ</li>
+            <li class="tag" data-reveal="pop">シュワッと弾ける炭酸</li>
+            <li class="tag" data-reveal="pop">果汁のフレッシュさ</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="about__can">
+        <picture>
+          <source type="image/avif" srcset="img/about-can-700.avif 700w, img/about-can-1024.avif 1024w" sizes="(min-width: 768px) 683px, 100vw">
+          <img src="img/about-can.png" alt="PON! LEMON POPの缶" width="1024" height="1536" loading="lazy" decoding="async">
+        </picture>
+      </div>
+    </section>
+
+    <!-- ===== 黒い帯 ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <ul class="marquee__list">
+          <li>☆</li><li>LEMON POP</li><li>☆</li><li>BERRY BANG</li><li>☆</li><li>SUNNY TROPIC</li>
+          <li>☆</li><li>LEMON POP</li><li>☆</li><li>BERRY BANG</li><li>☆</li><li>SUNNY TROPIC</li>
+        </ul>
+        <ul class="marquee__list">
+          <li>☆</li><li>LEMON POP</li><li>☆</li><li>BERRY BANG</li><li>☆</li><li>SUNNY TROPIC</li>
+          <li>☆</li><li>LEMON POP</li><li>☆</li><li>BERRY BANG</li><li>☆</li><li>SUNNY TROPIC</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===== 3 FLAVORS ===== -->
+    <section class="flavors" id="flavors" aria-labelledby="flavors-title">
+      <div class="container">
+        <hgroup class="heading">
+          <p class="heading__en" data-reveal="up">3 FLAVORS</p>
+          <h2 class="heading__ja" id="flavors-title" data-split>3つの<wbr>フレーバー</h2>
+          <p class="heading__sub" data-reveal="up">気分に合わせて、今日の1本を。</p>
+        </hgroup>
+
+        <ul class="flavors__list" data-stagger>
+          <li class="flavor" data-reveal="up" data-tilt>
+            <div class="flavor__img">
+              <picture>
+                <source type="image/avif" srcset="img/flavor-lemon-400.avif 400w, img/flavor-lemon-700.avif 700w" sizes="(min-width: 768px) 320px, calc(100vw - 40px)">
+                <img src="img/flavor-lemon.png" alt="レモンと水しぶきに囲まれたLEMON POPの缶" width="1024" height="1536" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="flavor__head">
+              <h3 class="flavor__name"><a class="flavor__link" href="#item-lemon">LEMON POP<span>レモン</span></a></h3>
+              <p class="flavor__catch">キュンと酸っぱい、目覚めの1本。</p>
+              <p class="flavor__text">レモンのすっきりした酸味と、強めの炭酸。気持ちを切り替えたいときに。</p>
+            </div>
+            <dl class="flavor__spec">
+              <div><dt>甘さ</dt><dd><span class="rating" role="img" aria-label="5段階中3"><i class="is-on"></i><i class="is-on"></i><i class="is-on"></i><i></i><i></i></span></dd></div>
+              <div><dt>酸味</dt><dd><span class="rating" role="img" aria-label="5段階中4"><i class="is-on"></i><i class="is-on"></i><i class="is-on"></i><i class="is-on"></i><i></i></span></dd></div>
+              <div><dt>炭酸の強さ</dt><dd><span class="rating" role="img" aria-label="5段階中5"><i class="is-on"></i><i class="is-on"></i><i class="is-on"></i><i class="is-on"></i><i class="is-on"></i></span></dd></div>
+            </dl>
+          </li>
+
+          <li class="flavor" data-reveal="up" data-tilt>
+            <div class="flavor__img">
+              <picture>
+                <source type="image/avif" srcset="img/flavor-berry-400.avif 400w, img/flavor-berry-700.avif 700w" sizes="(min-width: 768px) 320px, calc(100vw - 40px)">
+                <img src="img/flavor-berry.png" alt="いちごやブルーベリーに囲まれたBERRY BANGの缶" width="1024" height="1536" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="flavor__head">
+              <h3 class="flavor__name"><a class="flavor__link" href="#item-berry">BERRY BANG<span>ベリー</span></a></h3>
+              <p class="flavor__catch flavor__catch--s">甘ずっぱさが弾ける、ごほうびの1本。</p>
+              <p class="flavor__text">いちご・ラズベリー・ブルーベリーを合わせた、甘くて華やかな味わい。</p>
+            </div>
+            <dl class="flavor__spec">
+              <div><dt>甘さ</dt><dd><span class="rating" role="img" aria-label="5段階中4"><i class="is-on"></i><i class="is-on"></i><i class="is-on"></i><i class="is-on"></i><i></i></span></dd></div>
+              <div><dt>酸味</dt><dd><span class="rating" role="img" aria-label="5段階中3"><i class="is-on"></i><i class="is-on"></i><i class="is-on"></i><i></i><i></i></span></dd></div>
+              <div><dt>炭酸の強さ</dt><dd><span class="rating" role="img" aria-label="5段階中3"><i class="is-on"></i><i class="is-on"></i><i class="is-on"></i><i></i><i></i></span></dd></div>
+            </dl>
+          </li>
+
+          <li class="flavor" data-reveal="up" data-tilt>
+            <div class="flavor__img">
+              <picture>
+                <source type="image/avif" srcset="img/flavor-tropic-400.avif 400w, img/flavor-tropic-700.avif 700w" sizes="(min-width: 768px) 320px, calc(100vw - 40px)">
+                <img src="img/flavor-tropic.png" alt="パイナップルやマンゴーに囲まれたSUNNY TROPICの缶" width="1024" height="1536" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="flavor__head">
+              <h3 class="flavor__name"><a class="flavor__link" href="#item-tropic">SUNNY TROPIC<span>トロピカル</span></a></h3>
+              <p class="flavor__catch">南の島へ、ひとっ飛び。</p>
+              <p class="flavor__text">パイナップルとパッションフルーツの、とろける甘さ。</p>
+            </div>
+            <dl class="flavor__spec">
+              <div><dt>甘さ</dt><dd><span class="rating" role="img" aria-label="5段階中5"><i class="is-on"></i><i class="is-on"></i><i class="is-on"></i><i class="is-on"></i><i class="is-on"></i></span></dd></div>
+              <div><dt>酸味</dt><dd><span class="rating" role="img" aria-label="5段階中2"><i class="is-on"></i><i class="is-on"></i><i></i><i></i><i></i></span></dd></div>
+              <div><dt>炭酸の強さ</dt><dd><span class="rating" role="img" aria-label="5段階中3"><i class="is-on"></i><i class="is-on"></i><i class="is-on"></i><i></i><i></i></span></dd></div>
+            </dl>
+          </li>
+        </ul>
+        <p class="note">※味の指標は課題用の架空設定です。</p>
+      </div>
+    </section>
+
+    <!-- ===== 黒い帯（逆方向） ===== -->
+    <div class="marquee marquee--reverse" aria-hidden="true">
+      <div class="marquee__track">
+        <ul class="marquee__list">
+          <li>☆</li><li>LEMON POP</li><li>☆</li><li>BERRY BANG</li><li>☆</li><li>SUNNY TROPIC</li>
+          <li>☆</li><li>LEMON POP</li><li>☆</li><li>BERRY BANG</li><li>☆</li><li>SUNNY TROPIC</li>
+        </ul>
+        <ul class="marquee__list">
+          <li>☆</li><li>LEMON POP</li><li>☆</li><li>BERRY BANG</li><li>☆</li><li>SUNNY TROPIC</li>
+          <li>☆</li><li>LEMON POP</li><li>☆</li><li>BERRY BANG</li><li>☆</li><li>SUNNY TROPIC</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===== SECRET（炭酸の泡） ===== -->
+    <section class="secret" id="secret" aria-labelledby="secret-title">
+      <!-- 泡：--x=横位置 / --p=初期の上昇進捗(0〜1) / --dur=上昇にかかる時間 -->
+      <div class="bubbles" aria-hidden="true">
+        <span class="bubble bubble--l" style="--x: 94%;   --p: .92; --dur: 11s"></span>
+        <span class="bubble bubble--l" style="--x: 76.8%; --p: .26; --dur: 12s"></span>
+        <span class="bubble bubble--l" style="--x: 84.6%; --p: .72; --dur: 10s"></span>
+        <span class="bubble bubble--s" style="--x: 79.4%; --p: .56; --dur: 7s"></span>
+        <span class="bubble bubble--s" style="--x: 91.8%; --p: .40; --dur: 8s"></span>
+        <span class="bubble bubble--s" style="--x: 63.8%; --p: .85; --dur: 7.5s"></span>
+        <span class="bubble bubble--s" style="--x: 56.4%; --p: .47; --dur: 8.5s"></span>
+        <span class="bubble bubble--s" style="--x: 5.7%;  --p: .90; --dur: 7s"></span>
+        <span class="bubble bubble--s" style="--x: 9.4%;  --p: .26; --dur: 8s"></span>
+        <span class="bubble bubble--s" style="--x: 54.5%; --p: .12; --dur: 6.5s"></span>
+        <span class="bubble bubble--s" style="--x: 85.2%; --p: .13; --dur: 7s"></span>
+        <span class="bubble bubble--l" style="--x: 5.1%;  --p: .55; --dur: 11.5s"></span>
+        <span class="bubble bubble--l" style="--x: 0%;    --p: .17; --dur: 10.5s"></span>
+      </div>
+
+      <div class="container">
+        <hgroup class="heading heading--white">
+          <p class="heading__en" data-reveal="up">SECRET</p>
+          <h2 class="heading__ja" id="secret-title" data-split>PON!の<wbr>おいしさの<wbr>秘密</h2>
+        </hgroup>
+
+        <ol class="secret__list" data-stagger>
+          <li class="point" data-reveal="left">
+            <span class="point__badge">果実の<br>風味</span>
+            <div class="point__body">
+              <h3 class="point__title">果汁のフレッシュさを、そのまま。</h3>
+              <p class="point__text">果実の香りがいちばん引き立つバランスを探して、配合を何度も見直しました。</p>
+            </div>
+          </li>
+          <li class="point" data-reveal="left">
+            <span class="point__badge">炭酸の<br>爽快感</span>
+            <div class="point__body">
+              <h3 class="point__title">開けた瞬間、PON!と弾ける。</h3>
+              <p class="point__text">強めの炭酸で、ひとくち目からシュワッと爽快。最後のひと口まで、弾ける楽しさが続きます。</p>
+            </div>
+          </li>
+          <li class="point" data-reveal="left">
+            <span class="point__badge">素材</span>
+            <div class="point__body">
+              <h3 class="point__title">毎日飲みたくなる、素直な味。</h3>
+              <p class="point__text">香料・着色料は使わず、果実の色と香りを活かしました。</p>
+            </div>
+          </li>
+        </ol>
+        <p class="note note--white">※製品仕様は課題用の架空設定です。</p>
+      </div>
+    </section>
+
+    <!-- ===== SCENE ===== -->
+    <section class="scene" id="scene" aria-labelledby="scene-title">
+      <div class="container">
+        <hgroup class="heading">
+          <p class="heading__en" data-reveal="up">SCENE</p>
+          <h2 class="heading__ja" id="scene-title" data-split>こんなときに、<wbr>PON!</h2>
+          <p class="heading__sub" data-reveal="up">いつもの時間を、ちょっと特別に。</p>
+        </hgroup>
+
+        <ul class="scene__list" data-stagger>
+          <li class="scene-card" data-reveal="pop">
+            <div class="scene-card__img scene-card__img--lemon">
+              <picture>
+                <source type="image/avif" srcset="img/scene-lemon-608.avif 608w, img/scene-lemon-1232.avif 1232w" sizes="(min-width: 768px) 370px, 81vw">
+                <img src="img/scene-lemon.png" alt="LEMON POPを片手に元気に歩く女の子のイラスト" width="1408" height="768" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <p class="tag tag--en">LEMON POP</p>
+            <h3 class="scene-card__title">勉強の合間に</h3>
+            <p class="scene-card__text">集中が切れたら、レモンでリセット。<br>もうひとがんばりの合図に。</p>
+          </li>
+          <li class="scene-card" data-reveal="pop">
+            <div class="scene-card__img scene-card__img--berry">
+              <picture>
+                <source type="image/avif" srcset="img/fv-girl-608.avif 608w, img/fv-girl-1232.avif 1232w" sizes="(min-width: 768px) 370px, 81vw">
+                <img src="img/fv-girl.png" alt="芝生に座ってBERRY BANGを掲げる女の子のイラスト" width="1408" height="768" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <p class="tag tag--en">BERRY BANG</p>
+            <h3 class="scene-card__title">休日のピクニックに</h3>
+            <p class="scene-card__text">芝生にごろんと座って、甘ずっぱい1本を。いつもの公園が、ちょっと特別な場所に。</p>
+          </li>
+          <li class="scene-card" data-reveal="pop">
+            <div class="scene-card__img scene-card__img--tropic">
+              <picture>
+                <source type="image/avif" srcset="img/scene-tropic-608.avif 608w, img/scene-tropic-1232.avif 1232w" sizes="(min-width: 768px) 370px, 81vw">
+                <img src="img/scene-tropic.png" alt="SUNNY TROPICで乾杯する男の子のイラスト" width="1408" height="768" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <p class="tag tag--en">SUNNY TROPIC</p>
+            <h3 class="scene-card__title">友だちと乾杯</h3>
+            <p class="scene-card__text">集まった日は、トロピカルで乾杯。会話も一気に南国気分。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== SHOP ===== -->
+    <section class="shop" id="shop" aria-labelledby="shop-title">
+      <div class="container">
+        <div class="shop__set">
+          <div class="shop__img" data-reveal="pop">
+            <picture>
+              <source type="image/avif" srcset="img/shop-set-400.avif">
+              <img src="img/shop-set.png" alt="ギフトボックスに入った3種のPON!と、レモン・ベリー・パイナップル" width="848" height="1264" loading="lazy" decoding="async">
+            </picture>
+          </div>
+
+          <div class="shop__detail">
+            <hgroup class="heading">
+              <p class="heading__en" data-reveal="up">SHOP</p>
+              <h2 class="heading__ja" id="shop-title" data-split>3種<wbr>飲み比べ<wbr>セット</h2>
+              <p class="heading__sub" data-reveal="up">迷ったら、まずは全部。</p>
+            </hgroup>
+
+            <div class="shop__info" data-reveal="up">
+              <p class="shop__price"><span>¥1,980</span><small>(税込・送料無料)</small></p>
+              <p class="shop__amount">350ml × 3本</p>
+              <p class="shop__text">LEMON POP・BERRY BANG・SUNNY TROPICを1本ずつ。<br>ギフトボックス入りで、ちょっとしたプレゼントにも。</p>
+            </div>
+
+            <div data-reveal="pop">
+              <button class="button button--large button--block button--shine" type="button" aria-describedby="shop-note">セットを購入する</button>
+            </div>
+            <p class="note shop__note" id="shop-note">※価格・内容量は課題用の仮設定です。購入ボタンはデモです。</p>
+
+            <div class="shop__items" id="items">
+              <h3 class="shop__items-title" data-reveal="up">1本ずつ選ぶ</h3>
+              <ul class="shop__list" data-stagger>
+                <li class="item" id="item-lemon" data-reveal="right">
+                  <div class="item__img item__img--blue">
+                    <img src="img/item-lemon-thumb.png" alt="LEMON POPの缶" width="200" height="300" loading="lazy" decoding="async">
+                  </div>
+                  <div class="item__body">
+                    <p class="item__name">LEMON POP</p>
+                    <p class="item__price">￥680(税込)/送料別</p>
+                  </div>
+                  <button class="button button--dark" type="button" aria-describedby="shop-note">購入する</button>
+                </li>
+                <li class="item" id="item-berry" data-reveal="right">
+                  <div class="item__img item__img--yellow">
+                    <img src="img/item-berry-thumb.png" alt="BERRY BANGの缶" width="200" height="300" loading="lazy" decoding="async">
+                  </div>
+                  <div class="item__body">
+                    <p class="item__name">BERRY BANG</p>
+                    <p class="item__price">￥680(税込)/送料別</p>
+                  </div>
+                  <button class="button button--dark" type="button" aria-describedby="shop-note">購入する</button>
+                </li>
+                <li class="item" id="item-tropic" data-reveal="right">
+                  <div class="item__img item__img--red">
+                    <img src="img/item-tropic-thumb.png" alt="SUNNY TROPICの缶" width="200" height="300" loading="lazy" decoding="async">
+                  </div>
+                  <div class="item__body">
+                    <p class="item__name">SUNNY TROPIC</p>
+                    <p class="item__price">￥680(税込)/送料別</p>
+                  </div>
+                  <button class="button button--dark" type="button" aria-describedby="shop-note">購入する</button>
+                </li>
+              </ul>
+              <p class="shop__popup">ポップアップストアでも販売中。出店情報は公式Instagramでお知らせします。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <hgroup class="heading heading--white">
+          <p class="heading__en" data-reveal="up">FAQ</p>
+          <h2 class="heading__ja" id="faq-title" data-split>よくある<wbr>ご質問</h2>
+        </hgroup>
+
+        <div class="faq__list" data-stagger>
+          <details class="faq-item" name="faq" open data-reveal="up">
+            <summary class="faq-item__q"><span class="faq-item__mark">Q.</span>送料はかかりますか？</summary>
+            <div class="faq-item__a">
+              <div class="faq-item__inner">
+                <p><span class="faq-item__mark">A.</span>3種飲み比べセットは送料無料です。単品のみのご注文は、全国一律[○○円]（仮）の送料がかかります。</p>
+              </div>
+            </div>
+          </details>
+          <details class="faq-item" name="faq" data-reveal="up">
+            <summary class="faq-item__q"><span class="faq-item__mark">Q.</span>1本から購入できますか?</summary>
+            <div class="faq-item__a">
+              <div class="faq-item__inner">
+                <p><span class="faq-item__mark">A.</span>はい、各フレーバーを1本からご購入いただけます。（仮）</p>
+              </div>
+            </div>
+          </details>
+          <details class="faq-item" name="faq" data-reveal="up">
+            <summary class="faq-item__q"><span class="faq-item__mark">Q.</span>保存方法を教えてください。</summary>
+            <div class="faq-item__a">
+              <div class="faq-item__inner">
+                <p><span class="faq-item__mark">A.</span>直射日光・高温多湿を避けて保存してください。開けたあとはお早めにお飲みください。（仮）</p>
+              </div>
+            </div>
+          </details>
+          <details class="faq-item" name="faq" data-reveal="up">
+            <summary class="faq-item__q"><span class="faq-item__mark">Q.</span>賞味期限はどれくらいですか?</summary>
+            <div class="faq-item__a">
+              <div class="faq-item__inner">
+                <p><span class="faq-item__mark">A.</span>製造日から[○か月]（仮）です。缶の底に記載しています。</p>
+              </div>
+            </div>
+          </details>
+          <details class="faq-item" name="faq" data-reveal="up">
+            <summary class="faq-item__q"><span class="faq-item__mark">Q.</span>ポップアップストアの情報はどこでみれますか?</summary>
+            <div class="faq-item__a">
+              <div class="faq-item__inner">
+                <p><span class="faq-item__mark">A.</span>最新情報は公式SNSでお知らせします。（仮）</p>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta" id="cta" aria-labelledby="cta-title">
+      <picture class="cta__picture">
+        <source media="(max-width: 767px)" type="image/avif" srcset="img/cta-bg-sp-750.avif 750w, img/cta-bg-sp-960.avif 960w" sizes="100vw" width="1307" height="1743">
+        <source media="(max-width: 767px)" srcset="img/cta-bg-sp.png" width="1307" height="1743">
+        <source type="image/avif" srcset="img/cta-bg-1376.avif" width="1376" height="768">
+        <img class="cta__bg" src="img/cta-bg.png" alt="" width="1376" height="768" loading="lazy" decoding="async">
+      </picture>
+
+      <div class="cta__inner">
+        <h2 class="cta__title" id="cta-title">
+          <img class="cta__title-1" src="img/cta-copy-1.png" alt="シュワっと" width="539" height="152" data-reveal="slam">
+          <img class="cta__title-2" src="img/cta-copy-2.png" alt="毎日をひっくり返せ。" width="548" height="101" data-reveal="slam">
+        </h2>
+        <p class="cta__lead" data-reveal="up">さあ、今日はどれから開ける？</p>
+
+        <div class="cta__actions" data-reveal="up">
+          <a class="button button--large button--attention" href="#shop">3種セットを見る</a>
+          <a class="text-link" href="#items">一本ずつ選ぶ</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="footer__logo" href="#top">
+        <img src="img/logo-footer.svg" alt="PON!（ページの先頭へ）" width="1157" height="764" loading="lazy" decoding="async">
+      </a>
+
+      <nav aria-label="フッター">
+        <ul class="footer__list">
+          <li><a class="text-link text-link--white" href="#about">ブランド</a></li>
+          <li><a class="text-link text-link--white" href="#flavors">フレーバー</a></li>
+          <li><a class="text-link text-link--white" href="#shop">商品</a></li>
+          <li><a class="text-link text-link--white" href="#faq">FAQ</a></li>
+          <!-- 架空ブランドで実在のアカウントがないため、リンクにしない -->
+          <li><span class="footer__sns">Instagram（架空）</span></li>
+        </ul>
+      </nav>
+
+      <div class="footer__notes">
+        <p class="note">※本サイトはポートフォリオ制作のための架空ブランドです。商品・価格・仕様はすべて架空の設定です。</p>
+        <p class="note">※写真・イラストは生成AIで制作しています。</p>
+      </div>
+
+      <p class="footer__copy"><small>&copy; PON!</small></p>
+    </div>
+  </footer>
+</body>
+</html>
